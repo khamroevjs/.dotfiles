@@ -116,3 +116,10 @@ source $ZSH/oh-my-zsh.sh
 
 # --------- lsd ---------
 alias ls="lsd"
+
+# --------- lf ----------
+LFCD="$HOME/.config/lf/lfcd.sh"  # pre-built binary, make sure to use absolute path
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+    alias lf="lfcd"
+fi
